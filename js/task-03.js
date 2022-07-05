@@ -18,11 +18,12 @@ const limagesCategories = document.querySelector('.gallery')
 
   //!       1-ый вариант (правильный):
 
+let imagesList = ""
 for (const image of images) {
-  // console.log(image.alt);
-  limagesCategories.insertAdjacentHTML('beforeend', `<img src= ${image.url} alt= ${image.alt} />`);
-}
+imagesList += `<img src= ${image.url} alt= ${image.alt} />`
+};
 
+limagesCategories.insertAdjacentHTML('beforeend', imagesList);
 
 //!         2-ый вариант:
 //!   (создает новый массив элементов <img> 
