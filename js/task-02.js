@@ -45,7 +45,7 @@ const listCategories = document.querySelector('#ingredients')
 // // console.log(arrLi);
 // listCategories.append(...arrLi);
 // // console.log(listCategories);
-  //TODO___________________________________________________
+  TODO___________________________________________________
 
 
 
@@ -78,11 +78,11 @@ const addedLiOnList = arr => {
     elLi.classList.add("item");
     return elLi;
   });
-}
+};
 
 const arrLi = addedLiOnList(ingredients); 
-
 // console.log(arrLi);
+
 listCategories.append(...arrLi);
 // console.log(listCategories);
   //!___________________________________________________

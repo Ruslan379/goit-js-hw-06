@@ -12,3 +12,44 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const limagesCategories = document.querySelector('.gallery')
+// console.log(limagesCategories);
+
+  //!       1-ый вариант (правильный):
+
+for (const image of images) {
+  // console.log(image.alt);
+  limagesCategories.insertAdjacentHTML('beforeend', `<img src= ${image.url} alt= ${image.alt} />`);
+}
+
+
+//!         2-ый вариант:
+//!   (создает новый массив элементов <img> 
+//!   с помощью ф - ции и .map + колбэк => 
+//!   и добавляет в DOM все элементы <img> за один раз):
+
+// const addedlimagesOnList = arr => {
+//   return arr.map(image => {
+//     // console.log(image);
+//     const imageEl = document.createElement("img");
+//     imageEl.src = image.url;
+//     imageEl.alt = image.alt;
+//     // imageEl.width = 640;
+//     return imageEl;
+//   });
+// };
+
+// const arrLi = addedlimagesOnList(images); 
+// // console.log(arrLi);
+
+// limagesCategories.append(...arrLi);
+// // console.log(listCategories);
+  //!___________________________________________________
+
+
+
+
+
+
+
