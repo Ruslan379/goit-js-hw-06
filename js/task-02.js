@@ -45,7 +45,7 @@ const listCategories = document.querySelector('#ingredients')
 // // console.log(arrLi);
 // listCategories.append(...arrLi);
 // // console.log(listCategories);
-  TODO___________________________________________________
+  //TODO___________________________________________________
 
 
 
