@@ -4,7 +4,7 @@ const refs = {
 };
 
 refs.input.addEventListener('input', onInput);
-console.log(refs.nameLabel.textContent);
+// console.log(refs.nameLabel.textContent);
 
 
 
